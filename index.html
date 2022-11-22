@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(197, 83, 225);
+            color: white;
+            font-family: 'Comfortaa';
+        }
+        .div{
+            background-color: white;
+            color: rgb(197, 83, 225);
+            padding: 12px 0px;
+            padding-bottom: 15px;
+        }
+        .button{
+            padding: 10px 70px;
+            margin: 25px;
+            font-size: 24px;
+            color: rgb(197, 83, 225);
+            border: none;
+            border-radius: 100px;
+            box-shadow: 0px 0px 15px black;
+        }
+        .button:hover{
+            background-color: rgb(225, 225, 225);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="div">
+            <h1>Object Detection</h1>
+        </div>
+        <button class="button" onclick="couch()">Couch</button><br>
+        <button class="button" onclick="cb()">Refrigerator</button><br>
+        <button class="button" onclick="tv()">Television</button><br>
+        <button class="button" onclick="table()">Table</button>
+    </center>
+    <script>
+        function couch(){
+            window.location = 'couch.html';
+        }
+        function cb(){
+            window.location = 'cb.html';
+        }
+        function tv(){
+            window.location = 'tv.html';
+        }
+        function table(){
+            window.location = 'table.html';
+        }
+    </script>
+</body>
+</html>
